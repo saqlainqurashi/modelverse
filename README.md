@@ -9,7 +9,7 @@ Official model card
 Technology	Purpose
 Python 3.12	Development language
 PyTorch	Neural network execution
-Hugging Face Transformers	Loading models and tokenizers
+Hugging Face Transformers	Loading models and tokenizersQ
 Qwen2.5-0.5B-Instruct	Base model for our experiments
 VS Code	Development environment
 Git	Version control
