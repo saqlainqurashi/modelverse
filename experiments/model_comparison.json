@@ -1,0 +1,31 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "adapter": "D:\\modelverse\\models\\lora-full-training\\best_adapter",
+  "best_validation_epoch": 4,
+  "best_validation_loss": 1.9420004425377682,
+  "generation_settings": {
+    "max_new_tokens": 120,
+    "do_sample": false
+  },
+  "total_questions": 2,
+  "results": [
+    {
+      "question": "What is unsupervised learning?",
+      "reference_answer": "Unsupervised learning discovers patterns in data without predefined target labels. For example, customer segmentation groups customers with similar purchasing behavior.",
+      "base_answer": "Unsupervised learning is a type of machine learning where the model does not have any labeled data to train on, meaning it must learn from raw data without any specific patterns or categories. Instead, it uses algorithms that can identify and separate different groups of data points based on their inherent characteristics.\n\nHere's how unsupervised learning works:\n\n1. **Data Collection**: The dataset is collected in some form, such as through surveys, observations, or other means.\n\n2. **Model Training**: An algorithm is trained using this data. This could be a simple rule-based system, a neural network, or",
+      "lora_answer": "Unsupervised learning is a type of machine learning where the model learns from unlabeled data, and it does not have any pre-defined target labels. The goal is to discover patterns in the data without being given specific targets or outcomes.",
+      "answers_identical": false,
+      "base_word_count": 96,
+      "lora_word_count": 40
+    },
+    {
+      "question": "What is a validation dataset?",
+      "reference_answer": "A validation dataset contains examples held out from training and is used to guide model development. For example, validation loss can help select a checkpoint or detect overfitting.",
+      "base_answer": "A validation dataset, also known as a test set or a holdout dataset, is a subset of the data used to evaluate the performance of a machine learning model before it's deployed on new data. Its purpose is to ensure that the model can generalize well and make accurate predictions on unseen data.\n\nHere’s how you might use a validation dataset:\n\n1. **Preparation**: Before training your model, you typically split your data into two parts: a training set and a validation set. The training set is used to train the model, while the validation set is used to assess its performance during the training",
+      "lora_answer": "A validation dataset is used to evaluate the performance of a model on unseen data. It consists of training and test sets that can be used for cross-validation, where each fold in the cross-validation process is used as a separate validation set.",
+      "answers_identical": false,
+      "base_word_count": 104,
+      "lora_word_count": 42
+    }
+  ]
+}

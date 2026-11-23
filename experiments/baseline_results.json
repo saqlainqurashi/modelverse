@@ -1,0 +1,22 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "evaluation_type": "baseline",
+  "generation_settings": {
+    "max_new_tokens": 120,
+    "do_sample": false
+  },
+  "system_prompt": "You are an AI engineering tutor. Explain concepts clearly with practical examples.",
+  "total_examples": 2,
+  "results": [
+    {
+      "question": "What is unsupervised learning?",
+      "expected_answer": "Unsupervised learning discovers patterns in data without predefined target labels. For example, customer segmentation groups customers with similar purchasing behavior.",
+      "model_answer": "Unsupervised learning is a type of machine learning where the model does not have any labeled data to train on, meaning it must learn from raw data without any specific patterns or categories. Instead, it uses algorithms that can identify and separate different groups of data points based on their inherent characteristics.\n\nHere's how unsupervised learning works:\n\n1. **Data Collection**: The dataset is collected in some form, such as through surveys, observations, or other means.\n\n2. **Model Training**: An algorithm is trained using this data. This could be a simple rule-based system, a neural network, or"
+    },
+    {
+      "question": "What is a validation dataset?",
+      "expected_answer": "A validation dataset contains examples held out from training and is used to guide model development. For example, validation loss can help select a checkpoint or detect overfitting.",
+      "model_answer": "A validation dataset, also known as a test set or a holdout dataset, is a subset of the data used to evaluate the performance of a machine learning model before it's deployed on new data. Its purpose is to ensure that the model can generalize well and make accurate predictions on unseen data.\n\nHere’s how you might use a validation dataset:\n\n1. **Preparation**: Before training your model, you typically split your data into two parts: a training set and a validation set. The training set is used to train the model, while the validation set is used to assess its performance during the training"
+    }
+  ]
+}

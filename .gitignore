@@ -63,6 +63,9 @@ outputs/
 *.h5
 *.pb
 
+# Keep the project's small LoRA adapter weights
+!models/**/*.safetensors
+
 # Hugging Face cache files
 .cache/huggingface/
 
@@ -77,3 +80,9 @@ outputs/
 ._*
 Thumbs.db
 Desktop.ini
+
+
+# Local downloaded models
+models/downloaded/
+models/cache/
+models/checkpoints/
